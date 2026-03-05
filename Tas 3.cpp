@@ -1,19 +1,18 @@
 #include <iostream>
-#include <cmath>
-
-using namespace std;
 
 int main() {
     int n;
-    cout << "Please enter a number between 3 and 9: ";
-    cin >> n;
+    std::cout << "Please enter a number between 3 and 9: ";
+    std::cin >> n;
 
-    for (int i = 1; i <= 2 * n - 1; i++) {
-        int k = n - abs(n - i);
-        for (int j = 0; j < k; j++) {
-            cout << "*";
-        }
-        cout << endl;
+    for (int i = 1; i <= n; ++i) {
+        for (int j = 0; j < i; ++j) std::cout << "*";
+        std::cout << std::endl;
+    }
+
+    for (int i = n - 1; i >= 1; --i) {
+        for (int j = 0; j < i; ++j) std::cout << "*";
+        std::cout << std::endl;
     }
 
     return 0;
