@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-    long long n; 
+    long long n;
     int steps = 0;
 
     std::cout << "Please enter a positive integer greater than 1: ";
@@ -12,7 +12,7 @@ int main() {
         return 0;
     }
 
-    std::cout << n;
+    std::cout << n; 
 
     while (n != 1) {
         if (n % 2 == 0) {
@@ -28,4 +28,3 @@ int main() {
 
     return 0;
 }
-    
